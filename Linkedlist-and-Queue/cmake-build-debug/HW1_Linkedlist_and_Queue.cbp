@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="HW1_Linkedlist_and_Queue"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HW1_Linkedlist_and_Queue">
+				<Option output="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/HW1_Linkedlist_and_Queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW1_Linkedlist_and_Queue"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="HW1_Linkedlist_and_Queue/fast">
+				<Option output="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/HW1_Linkedlist_and_Queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 HW1_Linkedlist_and_Queue/fast"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j10 -f &quot;/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/include/graph.hpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/include/linked_list.hpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/include/queue.hpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/src/graph.cpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/src/linked_list.cpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/src/main.cpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/src/queue.cpp">
+			<Option target="HW1_Linkedlist_and_Queue"/>
+		</Unit>
+		<Unit filename="/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

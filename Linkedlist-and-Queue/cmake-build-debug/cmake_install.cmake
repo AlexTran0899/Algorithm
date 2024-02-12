@@ -1,4 +1,4 @@
-# Install script for directory: /Users/alexsmacbookpro/Desktop/Algorithm/HW1-Linkedlist-and-Queue
+# Install script for directory: /Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/alexsmacbookpro/Desktop/Algorithm/HW1-Linkedlist-and-Queue/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

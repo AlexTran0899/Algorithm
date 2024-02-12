@@ -76,7 +76,7 @@ bool testGraph() {
     Graph G(6);
     G.insertEdge(0, 1);
     G.insertEdge(1, 2);
-//    G.insertEdge(1, 3);
+    G.insertEdge(1, 3);
     G.insertEdge(2, 4);
     G.insertEdge(4, 3);
     G.insertEdge(4, 5);

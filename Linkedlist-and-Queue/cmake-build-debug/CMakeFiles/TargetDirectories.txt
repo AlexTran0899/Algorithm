@@ -1,3 +1,3 @@
-/Users/alexsmacbookpro/Desktop/Algorithm/HW1-Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/HW1_Linkedlist_and_Queue.dir
-/Users/alexsmacbookpro/Desktop/Algorithm/HW1-Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/alexsmacbookpro/Desktop/Algorithm/HW1-Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/HW1_Linkedlist_and_Queue.dir
+/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alexsmacbookpro/Desktop/Algorithm/Linkedlist-and-Queue/cmake-build-debug/CMakeFiles/rebuild_cache.dir
