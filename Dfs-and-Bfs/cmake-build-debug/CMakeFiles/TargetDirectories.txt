@@ -1,0 +1,3 @@
+/Users/alexsmacbookpro/Desktop/Algorithm/Dfs-and-Bfs/cmake-build-debug/CMakeFiles/Dfs_and_Bfs.dir
+/Users/alexsmacbookpro/Desktop/Algorithm/Dfs-and-Bfs/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/alexsmacbookpro/Desktop/Algorithm/Dfs-and-Bfs/cmake-build-debug/CMakeFiles/rebuild_cache.dir

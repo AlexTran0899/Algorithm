@@ -1,0 +1,24 @@
+# ninja log v5
+383	416	1708962350654720048	Dfs_and_Bfs	48f4279c626f0b11
+2	383	1708962350620099193	CMakeFiles/Dfs_and_Bfs.dir/src/main.cpp.o	96a63272c2c53085
+2	323	1708962163594549169	CMakeFiles/Dfs_and_Bfs.dir/src/graph.cpp.o	8e508ea0496e1bb7
+2	292	1708959660715752066	CMakeFiles/Dfs_and_Bfs.dir/src/rdfs.cpp.o	a85669d54cbc12b9
+2	282	1708824709538602078	CMakeFiles/Dfs_and_Bfs.dir/src/linked_list.cpp.o	4f4d0af1b8cccde1
+2	289	1708959660711549343	CMakeFiles/Dfs_and_Bfs.dir/src/queue.cpp.o	36f60c84d5cfda3c
+2	272	1708961060561149504	CMakeFiles/Dfs_and_Bfs.dir/src/bfs.cpp.o	e970e7718753cc5a
+1	296	1708823009949649801	CMakeFiles/Dfs_and_Bfs.dir/src/stack.cpp.o	fb3c5140c74ee736
+2	298	1708962212388301650	CMakeFiles/Dfs_and_Bfs.dir/src/dfs.cpp.o	f0f8d8efa718e14a
+1	411	1708962367980970743	CMakeFiles/Dfs_and_Bfs.dir/src/main.cpp.o	96a63272c2c53085
+411	452	1708962368023351913	Dfs_and_Bfs	48f4279c626f0b11
+2	269	1708962420687489203	CMakeFiles/Dfs_and_Bfs.dir/src/bfs.cpp.o	e970e7718753cc5a
+269	310	1708962420730029708	Dfs_and_Bfs	48f4279c626f0b11
+2	326	1708962443701646919	CMakeFiles/Dfs_and_Bfs.dir/src/graph.cpp.o	8e508ea0496e1bb7
+326	363	1708962443741064122	Dfs_and_Bfs	48f4279c626f0b11
+2	338	1708962475225161058	CMakeFiles/Dfs_and_Bfs.dir/src/graph.cpp.o	8e508ea0496e1bb7
+338	376	1708962475264693803	Dfs_and_Bfs	48f4279c626f0b11
+2	308	1708962499121398202	CMakeFiles/Dfs_and_Bfs.dir/src/graph.cpp.o	8e508ea0496e1bb7
+308	344	1708962499158338606	Dfs_and_Bfs	48f4279c626f0b11
+1	328	1708962518518934645	CMakeFiles/Dfs_and_Bfs.dir/src/graph.cpp.o	8e508ea0496e1bb7
+328	366	1708962518558942432	Dfs_and_Bfs	48f4279c626f0b11
+1	287	1708962591998895226	CMakeFiles/Dfs_and_Bfs.dir/src/bfs.cpp.o	e970e7718753cc5a
+287	327	1708962592040649436	Dfs_and_Bfs	48f4279c626f0b11

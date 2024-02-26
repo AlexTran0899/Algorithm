@@ -6,9 +6,9 @@
 #include <map>
 #include <fstream>
 
-#ifdef OPENCV
-#include <opencv2/opencv.hpp>
-#endif
+// #ifdef OPENCV
+// #include <opencv2/opencv.hpp>
+// #endif
 
 bool testLinkedList() {
     LinkedList<int> linkedList;
