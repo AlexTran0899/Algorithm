@@ -37,7 +37,7 @@ std::vector<int> Graph::search(int start, int destination) {
 
         for (int i = 0; i < numberOfAdjacencyNodes; i++) {
             int v = p->value;
-            if (mask[v] == 0) { // check to see if we have visited this node, if not append the value to the queue
+            if (mask[v] == 0) {
                 queue.push(v);
                 trace[v] = u;
                 mask[v] = 1;

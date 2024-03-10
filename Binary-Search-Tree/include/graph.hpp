@@ -8,19 +8,21 @@
 class Graph {
     private:
         int n; // Number of vertices 
-
+        std::vector<LinkedList<std::pair<int, int> > > e; // Adjacent list 
         std::vector<int> traces;
         std::vector<bool> visited;
+        std::vector<int> dist;
     public:
-        std::vector<LinkedList<int> > e; // Adjacent list
         Graph(int n);
         ~Graph();
-        void insertEdge(int u, int v, bool directed = false);
+        void insertEdge(int u, int v, int w, bool directed = false);
         
         void reset();
 
-        bool isVisited(int v);
-        void setVisited(int v);
+        int &distance(int u);
+
+        bool isVisited(int u);
+        void setVisited(int u);
         
         int trace(int u);
         void setTrace(int u, int v);

@@ -6,6 +6,7 @@
 #include <map>
 #include <fstream>
 #include <search.hpp>
+//#include "../include/queue.hpp"
 
 #ifdef OPENCV
 #include <opencv2/opencv.hpp>
@@ -81,10 +82,9 @@ void searchOnCampus(std::string start = "BELL", std::string destination = "HAPG"
 
     std::vector<int> path = G.search(name2index[start], name2index[destination], searchfn);
 
-    std::cout << "Path from " << start  << " to " << " detination: " << start ;
+    std::cout << "Path from " << start  << " to " << " destination: " << start ;
     for (int i = 1; i < path.size(); ++i)
         std::cout << " -> " << index2name[path[i]];
-    
     std::cout << "\n";
 
 #ifdef OPENCV
@@ -108,14 +108,13 @@ void searchOnCampus(std::string start = "BELL", std::string destination = "HAPG"
 
 }
 int main(int argc, char **args) {
-    std::string algName("bfs");
+    std::string algName(args[1]);
 
-    
     std::cout << "Perform unit test on your " << algName << " implementation" << std::endl;
     testGraph(algName);
-    
+
     std::cout << "\n\n";
-    
+
     searchOnCampus("JBHT", "HAPG", algName);
 
     std::cout << "\n";
