@@ -58,8 +58,6 @@ LinkedListNode<T>* LinkedList<T>::getRoot() {
     return this->root;
 }
 
-
-
 template<class T>
 LinkedListNode<T>* LinkedList<T>::remove(T value) {
     LinkedListNode<T> *p = this->root;

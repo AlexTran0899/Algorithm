@@ -8,7 +8,7 @@ struct BSTNode {
     BSTNode *right;
 
     BSTNode();
-    BSTNode(T key, int height = 0, BSTNode *left = NULL, BSTNode *right = NULL);  
+    BSTNode(T key, int height = 0, BSTNode *left = NULL, BSTNode *right = NULL);
     ~BSTNode();
 };
 
@@ -16,9 +16,9 @@ template<class T>
 class BST {
     protected:
         BSTNode<T> *root;
-        
+
         void clear(BSTNode<T> *node);
-        BSTNode<T> *find(T key, BSTNode<T> *node);
+        BSTNode<T> *find(T key, BSTNode<T> *node) const;
         BSTNode<T> *findMaximum(BSTNode<T> *node);
         BSTNode<T> *insert(T key, BSTNode<T> *node);
         BSTNode<T> *remove(T key, BSTNode<T> *node);

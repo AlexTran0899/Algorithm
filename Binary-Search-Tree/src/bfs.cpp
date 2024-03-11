@@ -8,7 +8,7 @@ void bfs(Graph &G, int start, int destination) {
 
     G.distance(start) = 0;
     bst.insert(std::pair<int, int>(G.distance(start), start));
-    
+
     G.setTrace(start, -1);
 
     while (true) {
@@ -36,7 +36,7 @@ void bfs(Graph &G, int start, int destination) {
             if (dist + w < G.distance(v)) {
                 G.distance(v) = dist  + w ;
                 bst.insert( std::pair<int, int>(G.distance(v), v) );
-                G.setTrace(v, u);   
+                G.setTrace(v, u);
             }
         }
     }
