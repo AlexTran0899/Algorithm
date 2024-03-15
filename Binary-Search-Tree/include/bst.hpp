@@ -20,7 +20,7 @@ class BST {
         void clear(BSTNode<T> *node);
         BSTNode<T> *find(T key, BSTNode<T> *node) const;
         BSTNode<T> *findMaximum(BSTNode<T> *node);
-        BSTNode<T> *insert(T key, BSTNode<T> *node);
+        BSTNode<T> *insert(T key, BSTNode<T> *node, BSTNode<T> *parent);
         BSTNode<T> *remove(T key, BSTNode<T> *node);
     public:
         BST();

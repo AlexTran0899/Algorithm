@@ -1,6 +1,6 @@
 PROJECT_DIR=.
 
-CFLAGS=-I${PROJECT_DIR}/include/ -std=c++14
+CFLAGS=-I${PROJECT_DIR}/include/ -std=c++14 -w
 CC=gcc
 CXX=g++
 

@@ -48,10 +48,11 @@ void BST<T>::clear(BSTNode<T> *node) {
 
 template<class T>
 BSTNode<T> *BST<T>::find(T key, BSTNode<T> *node) const {
-    if(node == nullptr) {
+    if(node == nullptr){
         return nullptr;
     }
-    if(node->key == key) {
+
+    if(node->key == key){
         return node;
     }
 
@@ -68,51 +69,48 @@ BSTNode<T> *BST<T>::findMaximum(BSTNode<T> *node) {
 }
 
 template<class T>
-BSTNode<T> *BST<T>::insert(T key, BSTNode<T> *node) {
-    if(this->root == nullptr){
-        return this->root = new BSTNode<T>(key, 0, nullptr, nullptr);
+BSTNode<T> *BST<T>::insert(T key, BSTNode<T> *node, BSTNode<T> *parent) {
+    if(node == nullptr){ 
+        int height = parent == nullptr ? 0 : parent->height + 1;
+        return new BSTNode<T>(key, height, nullptr, nullptr); 
     }
 
-    BSTNode<T> *parent = nullptr;
-    BSTNode<T> *current = node;
-    while (current != nullptr) {
-        parent = current;
-        if (key < current->key) {
-            current = current->left;
-        } else {
-            current = current->right;
-        }
-    }
-
-    if (key < parent->key) {
-        parent->left = new BSTNode<T>(key, parent->height + 1, nullptr, nullptr);
+    if(node->key > key) {
+        node->left = insert(key, node->left, node);
     } else {
-        parent->right = new BSTNode<T>(key, parent->height + 1, nullptr, nullptr);
+        node->right = insert(key, node->right, node);
     }
+
     return node;
 }
 
 template<class T>
 BSTNode<T> *BST<T>::remove(T key, BSTNode<T> *node) {
-    if(!node) return nullptr;
-    if(key < node->key) {
+    if(node == nullptr) return nullptr;
+    if(node->key > key) {
         node->left = remove(key, node->left);
-    } else if(key > node->key) {
+    } else if (node->key < key) {
         node->right = remove(key, node->right);
     } else {
-        if(!node->left) {
-            return node->right;
-        } else if (!node->right) {
-            return node->left;
+        // case 1: 1 child
+        if(node->right == nullptr){
+            BSTNode<T> *temp = node->right;
+            delete node;
+            return temp;
+        } else if(node->left == nullptr) {
+            BSTNode<T> *temp = node->left;
+            delete node;
+            return temp;
+        } else {
+            std::cout << "Two child" << std::endl;
+            BSTNode<T> *temp = node->right;
+            while(temp && temp->left != nullptr) temp = temp->left;
+            node->key = temp->key;
+            node->right = remove(temp->key, node->right);
         }
-
-        BSTNode<T> *temp = node->right;
-        while(temp->left) {
-            temp = temp->left;
-        }
-        node->key = temp->key;
-        node->right = remove(temp->key, node->right);
+        
     }
+
     return node;
 }
 
@@ -140,7 +138,7 @@ BSTNode<T> *BST<T>::findMaximum() {
 
 template<class T>
 BSTNode<T> *BST<T>::insert(T key) {
-    return this->root = this->insert(key, this->root);
+    return this->root = this->insert(key, this->root, nullptr);
 }
 
 template<class T>

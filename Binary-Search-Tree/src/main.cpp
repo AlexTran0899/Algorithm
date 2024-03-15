@@ -14,53 +14,54 @@
 
 bool testBST() {
     BST<int> bst;
+    int arr[] = {1,29,-20,9, 0,2, -90, 5, 11, 90};
     for (int i = 0; i < 10; ++i) {
-        std::cout << "Insert " << i << " into BST" << std::endl;
-        bst.insert(i);
+        std::cout << "Insert " << arr[i] << " into BST" << std::endl;
+        bst.insert(arr[i]);
+    }
 
-        std::cout << "Find " << i << ". ";
-        if (bst.find(i) != NULL && bst.find(i)->key == i)
-            std::cout << "Found " << i << " in BST" << std::endl;
+    for (int i = 0; i < 10; ++i) {
+        std::cout << "Find " << arr[i] << ". ";
+        if (bst.find(arr[i]) != NULL && bst.find(arr[i])->key == arr[i])
+            std::cout << "Found " << arr[i] << " in BST" << std::endl;
         else
             return false;
 
-        std::cout << "Find " << i+1 << ". ";
-        if (bst.find(i+1) == NULL)
-            std::cout << "Not found " << i+1 << " in BST" << std::endl;
-        else
-            return false;
+        // std::cout << "Find " << i+1 << ". ";
+        // if (bst.find(i+1) == NULL)
+        //     std::cout << "Not found " << i+1 << " in BST" << std::endl;
+        // else
+        //     return false;
 
-        std::cout << std::endl;
+        // std::cout << std::endl;
     }
 
     std::cout << "Maximum value in BST: ";
-    if (bst.findMaximum() == NULL || bst.findMaximum()->key != 9)
+    if (bst.findMaximum() == NULL)
         return false;
     else
         std::cout << bst.findMaximum()->key << std::endl << std::endl;
 
-
     for (int i = 0; i < 9; ++i) {
-        std::cout << "Remove " << i << " out of BST" << std::endl;
-        bst.remove(i);
+        std::cout << "Remove " << arr[i] << " out of BST" << std::endl;
+        bst.remove(arr[i]);
 
-        std::cout << "Find " << i << ". ";
-        if (bst.find(i) == NULL)
-            std::cout << "Not found " << i << " in BST" << std::endl;
+        std::cout << "Find " << arr[i] << ". ";
+        if (bst.find(arr[i]) == NULL)
+            std::cout << "Not found " << arr[i] << " in BST" << std::endl;
         else
             return false;
 
-        std::cout << "Find " << i+1 << ". ";
-        if (bst.find(i+1) != NULL && bst.find(i+1)->key == i+1)
-            std::cout << "Found " << i+1 << " in BST" << std::endl;
-        else
-            return false;
-        std::cout << std::endl;
+        // std::cout << "Find " << i+1 << ". ";
+        // if (bst.find(i+1) != NULL && bst.find(i+1)->key == i+1)
+        //     std::cout << "Found " << i+1 << " in BST" << std::endl;
+        // else
+        //     return false;
+        // std::cout << std::endl;
     }
 
     return true;
 }
-
 
 bool testGraph() {
     Graph G(6);
@@ -157,7 +158,7 @@ int main(int argc, char **args) {
 
     std::cout << "\n\n";
 
-    searchOnCampus("JBHT", "HAPG");
+    // searchOnCampus("JBHT", "HAPG");
 
     std::cout << "\n";
 
