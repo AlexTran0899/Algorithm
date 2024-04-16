@@ -1,0 +1,37 @@
+PROJECT_DIR=.
+CFLAGS=-I${PROJECT_DIR}/include/ -std=c++14 
+CC=C:/mingw64/bin/gcc.exe
+CXX=C:/mingw64/bin/g++.exe
+
+FILES=algorithms/mst.cpp graph.cpp main.cpp
+
+# Using OpenCV for Visualization
+OPENCV=0
+ifeq ($(OPENCV), 1)
+	LDFLAGS+=  -IC:/opencv-3.4.13/build/install/include
+	CFLAGS+= -DOPENCV=1 -LC:/opencv-3.4.13/build/bin -lopencv_imgcodecs3413 -lopencv_core3413 \
+				-lopencv_highgui3413 -lopencv_imgproc3413
+endif
+
+
+SRC_DIR=${PROJECT_DIR}/src/
+
+SRC_FILES=$(addprefix ${SRC_DIR}, ${FILES})
+
+all: 
+	$(warning "You have to type one of the following commands")
+	$(warning "     Type 'mingw32-make qsort' to run compile and run quick sort")
+	$(warning "     Type 'mingw32-make msort' to run compile and run merge sort")
+	$(warning "     Type 'mingw32-make hsort' to run compile and run heap sort")
+
+qsort: ${SRC_FILES} ${SRC_DIR}sort/qsort.cpp
+	${CXX} ${CFLAGS} $^ ${LDFLAGS} -o bin/$@ 
+	./bin/$@ 
+
+hsort: ${SRC_FILES} ${SRC_DIR}sort/hsort.cpp
+	${CXX} ${CFLAGS} $^ ${LDFLAGS} -o bin/$@ 
+	./bin/$@ 
+msort: ${SRC_FILES} ${SRC_DIR}sort/msort.cpp
+	${CXX} ${CFLAGS} $^ ${LDFLAGS} -o bin/$@ 
+	./bin/$@ 
+
